@@ -1,4 +1,4 @@
-# Ming Chen Academic CV
+# CHEN Ming (Eric) Academic CV
 
 This repository contains a static GitHub Pages CV site built from the source Word document.
 
@@ -13,4 +13,3 @@ This repository contains a static GitHub Pages CV site built from the source Wor
 ## Edit Content
 
 Most CV content is in `index.html`. Visual styling is in `styles.css`.
-
