@@ -15,7 +15,7 @@ summary: "I am a PhD researcher at the School of Education, University of Bristo
 
 ## Education
 
-**PhD in Education**, [University of Bristol](https://www.bristol.ac.uk/), United Kingdom  
+**PhD in Education (full scholarship)** , [University of Bristol](https://www.bristol.ac.uk/), United Kingdom  
 2023-present  
 
 **MA in Digital Technologies, Communication and Education**, [The University of Manchester](https://www.manchester.ac.uk/), United Kingdom  
@@ -83,8 +83,7 @@ For the most current publication record, please visit my [Google Scholar profile
 - [British Educational Research Association](https://www.bera.ac.uk/)
 - [European Association of Technology Enhanced Learning](https://ea-tel.eu/)
 - [Computer Assisted Language Instruction Consortium](https://www.calico.org/) (CALICO)
-
-
+- [European Association for Computer Assisted Language Learning](https://eurocall-languages.org/) (EUROCALL)
 
 ## Academic review activities
 
