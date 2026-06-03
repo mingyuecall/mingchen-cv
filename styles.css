@@ -196,6 +196,13 @@ h1 {
   stroke-width: 1.85;
 }
 
+.profile-links svg text {
+  fill: currentColor;
+  stroke: none;
+  font-size: 7px;
+  font-weight: 850;
+}
+
 .content {
   margin-bottom: 72px;
   padding: 42px 50px;
