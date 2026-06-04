@@ -6,9 +6,9 @@
   --line: #dce6e0;
   --paper: #f3efe4;
   --panel: rgba(255, 255, 255, 0.84);
-  --accent: #27645b;
-  --accent-deep: #123f39;
-  --accent-soft: #e7f1ed;
+  --accent: #2c673d;
+  --accent-deep: #1d4b2b;
+  --accent-soft: #e8f2e9;
   --gold: #b8832f;
   --gold-soft: #f4ecdd;
   --rose: #cf7d7b;
@@ -28,9 +28,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 18% 8%, rgba(207, 125, 123, 0.28), transparent 26rem),
-    radial-gradient(circle at 82% 88%, rgba(140, 189, 166, 0.24), transparent 32rem),
-    linear-gradient(135deg, #efe2d5 0%, #ebe5d7 42%, #e9eadc 100%),
+    radial-gradient(circle at 17% 9%, rgba(44, 103, 61, 0.18), transparent 25rem),
+    radial-gradient(circle at 82% 90%, rgba(44, 103, 61, 0.16), transparent 34rem),
+    radial-gradient(circle at 48% 4%, rgba(184, 131, 47, 0.12), transparent 27rem),
+    linear-gradient(135deg, #efe5d8 0%, #eee8da 44%, #e9ecdc 100%),
     var(--paper);
   color: var(--text);
   font-size: 16px;
@@ -101,10 +102,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(290px, 0.86fr) minmax(0, 1.34fr);
-  gap: 56px;
-  align-items: start;
-  padding: 74px 0 66px;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.42fr);
+  gap: 68px;
+  align-items: center;
+  min-height: calc(100vh - 66px);
+  padding: 50px 0 72px;
 }
 
 .identity {
@@ -115,8 +117,8 @@ main {
 
 .hero-photo-wrap {
   position: relative;
-  width: min(320px, 82vw);
-  margin: 0 auto 28px;
+  width: min(248px, 72vw);
+  margin: 0 auto 24px;
 }
 
 .hero-photo-wrap::before {
@@ -124,8 +126,8 @@ main {
   position: absolute;
   inset: -18px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(244, 221, 218, 0.42));
-  box-shadow: 0 32px 80px rgba(23, 33, 31, 0.14);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(232, 242, 233, 0.54));
+  box-shadow: 0 30px 76px rgba(44, 103, 61, 0.16);
 }
 
 .profile-photo {
@@ -145,8 +147,8 @@ h1 {
 
 h1 {
   margin: 0 0 22px;
-  color: #332f2d;
-  font-size: clamp(3.1rem, 6vw, 4.8rem);
+  color: var(--accent-deep);
+  font-size: clamp(2.75rem, 4.7vw, 3.9rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0;
@@ -169,14 +171,14 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.88);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.8);
-  color: #665f59;
+  color: var(--accent-deep);
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(23, 33, 31, 0.12);
 }
 
 .profile-links a:hover {
   background: #ffffff;
-  color: var(--rose);
+  color: var(--gold);
   transform: translateY(-2px);
 }
 
@@ -207,7 +209,9 @@ h1 {
 }
 
 .summary-panel {
-  padding-top: 22px;
+  align-self: center;
+  max-width: 760px;
+  padding-top: 84px;
 }
 
 .section-title {
@@ -235,7 +239,7 @@ h1 {
   height: 54px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.72);
-  color: var(--rose);
+  color: var(--accent);
   box-shadow: 0 10px 24px rgba(23, 33, 31, 0.07);
 }
 
@@ -333,11 +337,12 @@ h1 {
   .hero {
     grid-template-columns: 1fr;
     gap: 34px;
+    min-height: auto;
     padding: 44px 0 42px;
   }
 
   .hero-photo-wrap {
-    width: 220px;
+    width: 210px;
     margin-bottom: 22px;
   }
 
@@ -347,6 +352,7 @@ h1 {
 
   .summary-panel {
     padding-top: 0;
+    text-align: left;
   }
 
   .section-title {
@@ -366,7 +372,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.1rem);
+    font-size: clamp(2.75rem, 13vw, 3.8rem);
   }
 
   .profile-links a {
