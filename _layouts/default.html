@@ -24,11 +24,10 @@
 
     <main>
       <section class="hero">
-        <div class="hero-photo-wrap">
-          <img class="profile-photo" src="{{ page.photo | relative_url }}" alt="Portrait of {{ page.full_name }}">
-        </div>
-
-        <div class="hero-content">
+        <div class="identity">
+          <div class="hero-photo-wrap">
+            <img class="profile-photo" src="{{ page.photo | relative_url }}" alt="Portrait of {{ page.full_name }}">
+          </div>
           <h1>{{ page.full_name }}</h1>
 
           <nav class="profile-links" aria-label="Profile links">
@@ -53,7 +52,15 @@
               <span>ResearchGate</span>
             </a>
           </nav>
+        </div>
 
+        <div class="summary-panel">
+          <div class="section-title">
+            <span class="title-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 5.5h12v13H6z"/><path d="M9 9h6M9 12h6M9 15h3"/><path d="M4 8h2M4 12h2M4 16h2"/></svg>
+            </span>
+            <h2>Professional Summary</h2>
+          </div>
           <p class="welcome">{{ page.welcome }}</p>
         </div>
       </section>

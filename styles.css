@@ -4,13 +4,15 @@
   --text: #34413d;
   --muted: #6b7974;
   --line: #dce6e0;
-  --paper: #fbfcf8;
+  --paper: #f3efe4;
   --panel: rgba(255, 255, 255, 0.84);
   --accent: #27645b;
   --accent-deep: #123f39;
   --accent-soft: #e7f1ed;
   --gold: #b8832f;
   --gold-soft: #f4ecdd;
+  --rose: #cf7d7b;
+  --rose-soft: #f4ddda;
   --shadow: 0 26px 70px rgba(23, 33, 31, 0.11);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -26,9 +28,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 14% 12%, rgba(39, 100, 91, 0.14), transparent 26rem),
-    radial-gradient(circle at 86% 4%, rgba(184, 131, 47, 0.14), transparent 27rem),
-    linear-gradient(135deg, rgba(232, 242, 238, 0.96), rgba(251, 252, 248, 0.9) 48%, rgba(250, 246, 236, 0.96)),
+    radial-gradient(circle at 18% 8%, rgba(207, 125, 123, 0.28), transparent 26rem),
+    radial-gradient(circle at 82% 88%, rgba(140, 189, 166, 0.24), transparent 32rem),
+    linear-gradient(135deg, #efe2d5 0%, #ebe5d7 42%, #e9eadc 100%),
     var(--paper);
   color: var(--text);
   font-size: 16px;
@@ -93,102 +95,103 @@ a:hover {
 }
 
 main {
-  width: min(1120px, calc(100% - 36px));
+  width: min(1200px, calc(100% - 40px));
   margin: 0 auto;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 44px;
-  align-items: center;
-  padding: 70px 0 56px;
+  grid-template-columns: minmax(290px, 0.86fr) minmax(0, 1.34fr);
+  gap: 56px;
+  align-items: start;
+  padding: 74px 0 66px;
+}
+
+.identity {
+  display: grid;
+  justify-items: center;
+  text-align: center;
 }
 
 .hero-photo-wrap {
   position: relative;
+  width: min(320px, 82vw);
+  margin: 0 auto 28px;
 }
 
 .hero-photo-wrap::before {
   content: "";
   position: absolute;
-  inset: -18px 16px 18px -18px;
-  border-radius: 34px;
-  background: linear-gradient(135deg, var(--accent-soft), var(--gold-soft));
-  box-shadow: var(--shadow);
+  inset: -18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(244, 221, 218, 0.42));
+  box-shadow: 0 32px 80px rgba(23, 33, 31, 0.14);
 }
 
 .profile-photo {
   position: relative;
   display: block;
-  width: 220px;
-  height: 220px;
-  border: 8px solid #ffffff;
-  border-radius: 28px;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 18px 48px rgba(23, 33, 31, 0.15);
+  box-shadow: 0 24px 56px rgba(23, 33, 31, 0.18);
 }
 
-.hero-content {
-  max-width: 780px;
-}
-
-h1,
-h2 {
+h1 {
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 h1 {
-  margin: 0;
-  color: var(--accent-deep);
-  font-size: clamp(3.2rem, 8vw, 6.1rem);
-  font-weight: 750;
-  line-height: 0.98;
+  margin: 0 0 22px;
+  color: #332f2d;
+  font-size: clamp(3.1rem, 6vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1;
   letter-spacing: 0;
-}
-
-.welcome {
-  max-width: 760px;
-  margin: 22px 0 0;
-  padding: 18px 20px;
-  border-left: 4px solid var(--gold);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.62);
-  color: var(--text);
-  font-size: clamp(1.02rem, 1.7vw, 1.2rem);
 }
 
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 4px;
 }
 
 .profile-links a {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  min-height: 42px;
-  padding: 8px 13px;
-  border: 1px solid rgba(39, 100, 91, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--accent-deep);
-  font-weight: 750;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #665f59;
   text-decoration: none;
-  box-shadow: 0 8px 24px rgba(23, 33, 31, 0.05);
+  box-shadow: 0 10px 24px rgba(23, 33, 31, 0.12);
 }
 
 .profile-links a:hover {
-  border-color: rgba(184, 131, 47, 0.45);
-  background: var(--gold-soft);
-  transform: translateY(-1px);
+  background: #ffffff;
+  color: var(--rose);
+  transform: translateY(-2px);
+}
+
+.profile-links span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .profile-links svg {
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -201,6 +204,57 @@ h1 {
   stroke: none;
   font-size: 7px;
   font-weight: 850;
+}
+
+.summary-panel {
+  padding-top: 22px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #3b3735;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 850;
+  line-height: 1.12;
+}
+
+.title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--rose);
+  box-shadow: 0 10px 24px rgba(23, 33, 31, 0.07);
+}
+
+.title-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.welcome {
+  max-width: 760px;
+  margin: 0;
+  color: #514b47;
+  font-size: clamp(1.14rem, 1.75vw, 1.35rem);
+  line-height: 1.75;
 }
 
 .content {
@@ -278,21 +332,25 @@ h1 {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 42px 0 38px;
+    gap: 34px;
+    padding: 44px 0 42px;
   }
 
-  .profile-photo {
-    width: 168px;
-    height: 168px;
-    border-radius: 22px;
+  .hero-photo-wrap {
+    width: 220px;
+    margin-bottom: 22px;
   }
 
   .hero-photo-wrap::before {
-    inset: -12px auto 12px -12px;
-    width: 168px;
-    height: 168px;
-    border-radius: 28px;
+    inset: -12px;
+  }
+
+  .summary-panel {
+    padding-top: 0;
+  }
+
+  .section-title {
+    margin-bottom: 18px;
   }
 
   .content {
@@ -308,17 +366,19 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(3rem, 16vw, 4.2rem);
+    font-size: clamp(3rem, 15vw, 4.1rem);
   }
 
   .profile-links a {
-    flex: 1 1 100%;
+    width: 48px;
+    height: 48px;
   }
 }
 
 @media print {
   .site-header,
   .profile-links,
+  .summary-panel .title-icon,
   .hero-photo-wrap {
     display: none;
   }
