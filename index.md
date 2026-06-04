@@ -9,7 +9,12 @@ google_scholar: "https://scholar.google.com/citations?user=bhmuN8YAAAAJ&hl=en"
 linkedin: "https://www.linkedin.com/in/ming-chen-35b051407/"
 orcid: "https://orcid.org/0000-0003-4099-1606"
 researchgate: "https://www.researchgate.net/profile/Ming-Chen-174/research?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSJ9fQ"
-welcome: "Hi 😃 welcome! I am interested in Technology-enhanced language learning, Computer-supported collaborative learning, AI-assisted learning, Innovative pedagogical designs"
+welcome: "Hi 😃 welcome to my website! I am a PhD researcher exploring how digital technologies can make language learning more engaging, collaborative, and imaginative. My work brings together technology-enhanced language learning, computer-supported collaborative learning, AI-assisted learning, and innovative pedagogical designs. I am especially interested in how learners create, interact, and develop new forms of participation in digitally mediated learning environments."
+interests:
+  - Technology-enhanced language learning
+  - Computer-supported collaborative learning
+  - AI-assisted learning
+  - Innovative pedagogical designs
 ---
 
 ## Education
