@@ -12,7 +12,7 @@ google_scholar: "https://scholar.google.com/citations?user=bhmuN8YAAAAJ&hl=en"
 linkedin: "https://www.linkedin.com/in/ming-chen-35b051407/"
 orcid: "https://orcid.org/0000-0003-4099-1606"
 researchgate: "https://www.researchgate.net/profile/Ming-Chen-174/research?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSJ9fQ"
-welcome: "Hi, I’m CHEN Ming (Eric), a PhD researcher passionate about building the future of learning and teaching. My work sits at the intersection of emerging technologies such as artificial intelligence, virtual reality, and learning challenges. My PhD is about virtual reality and language learning.\n\nPlease reach out if you’re interested in collaborating on technology-enhanced learning! 😃"
+welcome: "Hi, I’m CHEN Ming (Eric), a PhD researcher passionate about building the future of learning and teaching. My work sits at the intersection of emerging technologies such as artificial intelligence, virtual reality, and learning sciences. My PhD is about virtual reality and language learning.\n\nPlease reach out if you’re interested in collaborating on technology-enhanced learning! 😃"
 interests:
   - Technology-enhanced language learning
   - Computer-supported collaborative learning

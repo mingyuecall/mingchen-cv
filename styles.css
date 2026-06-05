@@ -1,17 +1,18 @@
 :root {
   color-scheme: light;
   --ink: #242321;
-  --text: #45423e;
-  --muted: #756f68;
-  --line: #e6ded4;
-  --paper: #f7f2eb;
-  --panel: rgba(255, 255, 255, 0.82);
-  --accent: #a7644f;
-  --accent-deep: #673c32;
-  --accent-soft: #f3e3dc;
-  --slate: #44515d;
-  --icon: #5f5a55;
-  --shadow: 0 22px 60px rgba(60, 50, 42, 0.12);
+  --text: #34413d;
+  --muted: #66746f;
+  --line: #dce6df;
+  --paper: #fbfcf8;
+  --panel: rgba(255, 255, 255, 0.8);
+  --accent: #27645b;
+  --accent-deep: #174941;
+  --accent-soft: #e8f2ee;
+  --gold: #b8832f;
+  --gold-soft: #f4ead8;
+  --icon: #5f6864;
+  --shadow: 0 22px 60px rgba(23, 33, 31, 0.1);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -26,9 +27,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 12% 8%, rgba(167, 100, 79, 0.18), transparent 24rem),
-    radial-gradient(circle at 88% 72%, rgba(68, 81, 93, 0.12), transparent 34rem),
-    linear-gradient(135deg, #f4ece3 0%, #f8f4ee 48%, #f0eee8 100%),
+    radial-gradient(circle at 14% 12%, rgba(39, 100, 91, 0.13), transparent 27rem),
+    radial-gradient(circle at 84% 84%, rgba(184, 131, 47, 0.12), transparent 32rem),
+    linear-gradient(135deg, rgba(232, 242, 238, 0.92), rgba(251, 252, 248, 0.92) 50%, rgba(250, 246, 236, 0.94)),
     var(--paper);
   color: var(--text);
   font-size: 16px;
@@ -37,7 +38,7 @@ body {
 
 a {
   color: var(--accent-deep);
-  text-decoration-color: rgba(167, 100, 79, 0.28);
+  text-decoration-color: rgba(39, 100, 91, 0.3);
   text-underline-offset: 0.18em;
   transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
@@ -50,8 +51,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(230, 222, 212, 0.78);
-  background: rgba(247, 242, 235, 0.86);
+  border-bottom: 1px solid rgba(220, 230, 223, 0.78);
+  background: rgba(251, 252, 248, 0.86);
   backdrop-filter: blur(16px);
 }
 
@@ -101,15 +102,19 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.35fr);
-  gap: 34px;
+  gap: 44px;
   align-items: stretch;
-  padding: 46px 0 38px;
+  margin: 44px 0 38px;
+  padding: 40px 46px;
+  border: 1px solid rgba(220, 230, 223, 0.9);
+  border-radius: 22px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
-.identity,
-.summary-panel,
 .content {
-  border: 1px solid rgba(230, 222, 212, 0.9);
+  border: 1px solid rgba(220, 230, 223, 0.9);
   border-radius: 18px;
   background: var(--panel);
   box-shadow: var(--shadow);
@@ -120,8 +125,8 @@ main {
   display: grid;
   justify-items: center;
   align-content: center;
-  min-height: 520px;
-  padding: 34px 28px;
+  min-height: 0;
+  padding: 14px 12px;
   text-align: center;
 }
 
@@ -137,7 +142,7 @@ main {
   inset: -9px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 0 16px 38px rgba(60, 50, 42, 0.14);
+  box-shadow: 0 16px 38px rgba(23, 33, 31, 0.12);
 }
 
 .profile-photo {
@@ -151,7 +156,7 @@ main {
 
 h1 {
   margin: 0 0 14px;
-  color: var(--ink);
+  color: var(--accent-deep);
   font-size: clamp(2.35rem, 4.2vw, 3.7rem);
   font-weight: 850;
   line-height: 1.02;
@@ -166,7 +171,7 @@ h1 {
 
 .position {
   margin: 0;
-  color: var(--accent);
+  color: var(--gold);
   font-size: 1.14rem;
   font-weight: 800;
 }
@@ -196,11 +201,11 @@ h1 {
   background: #ffffff;
   color: var(--icon);
   text-decoration: none;
-  box-shadow: 0 8px 18px rgba(60, 50, 42, 0.12);
+  box-shadow: 0 8px 18px rgba(23, 33, 31, 0.1);
 }
 
 .profile-links a:hover {
-  color: var(--accent);
+  color: var(--gold);
   transform: translateY(-2px);
 }
 
@@ -234,8 +239,8 @@ h1 {
 .summary-panel {
   display: grid;
   align-content: center;
-  min-height: 520px;
-  padding: 44px 52px;
+  min-height: 0;
+  padding: 20px 8px 20px 28px;
 }
 
 .welcome {
@@ -275,8 +280,8 @@ h1 {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--gold-soft);
+  color: var(--gold);
 }
 
 .interest-icon svg {
