@@ -74,6 +74,7 @@ For the most current publication record, please visit my [Google Scholar profile
 
 ### Professional Engagement
 
+- PC member of Subconference on ALT, The 34th International Conference on Computers in Education (ICCE 2026)
 - Social Media Communicator, [AERA Constructivist Theory, Research and Practice SIG](https://www.aera.net/SIG025/Constructivist-Theory-Research-and-Practice)
 - Co-chair, Global Education Innovation Forum, Manchester, 2026
 - PhD Development Lead, Global PhD in Education Network, 2026-present
