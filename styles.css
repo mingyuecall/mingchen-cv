@@ -105,12 +105,7 @@ main {
   gap: 44px;
   align-items: stretch;
   margin: 44px 0 38px;
-  padding: 40px 46px;
-  border: 1px solid rgba(220, 230, 223, 0.9);
-  border-radius: 22px;
-  background: var(--panel);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
+  padding: 30px 10px 36px;
 }
 
 .content {
@@ -157,7 +152,7 @@ main {
 h1 {
   margin: 0 0 14px;
   color: var(--accent-deep);
-  font-size: clamp(1.85rem, 2.7vw, 2.55rem);
+  font-size: clamp(1.58rem, 2.15vw, 2.08rem);
   font-weight: 850;
   line-height: 1.02;
   letter-spacing: -0.01em;
@@ -414,7 +409,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(1.65rem, 7.5vw, 2.15rem);
+    font-size: clamp(1.42rem, 6.5vw, 1.86rem);
   }
 
   .profile-links a {
