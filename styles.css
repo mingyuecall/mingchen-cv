@@ -157,10 +157,11 @@ main {
 h1 {
   margin: 0 0 14px;
   color: var(--accent-deep);
-  font-size: clamp(2.35rem, 4.2vw, 3.7rem);
+  font-size: clamp(1.85rem, 2.7vw, 2.55rem);
   font-weight: 850;
   line-height: 1.02;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .pronouns {
@@ -413,7 +414,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(2.3rem, 11vw, 3.1rem);
+    font-size: clamp(1.65rem, 7.5vw, 2.15rem);
   }
 
   .profile-links a {
